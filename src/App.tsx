@@ -1,6 +1,14 @@
+import Sachin from "./components/Sachin";
+import Home from "./components/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-   <h1>Welcome to React with Typescript</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/sachin" element={<Sachin />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
