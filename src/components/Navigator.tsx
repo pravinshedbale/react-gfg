@@ -1,7 +1,6 @@
-import { useNavigate } from "react-router";
 import "./Navigator.css";
 const Navigator = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <ul>
