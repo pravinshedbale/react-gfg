@@ -1,5 +1,6 @@
+import Navigator from "./Navigator";
 const Home = () => {
-  return <div>Home</div>;
+  return <Navigator></Navigator>;
 };
 
 export default Home;

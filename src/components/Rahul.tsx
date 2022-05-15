@@ -1,12 +1,12 @@
 import PlayerCard from "./Container/PlayerCard";
 import Navigator from "./Navigator";
-const Sachin = () => {
+const Rahul = () => {
   return (
     <>
-      <PlayerCard>Sachin</PlayerCard>
+      <PlayerCard>Rahul</PlayerCard>
       <Navigator></Navigator>
     </>
   );
 };
 
-export default Sachin;
+export default Rahul;
