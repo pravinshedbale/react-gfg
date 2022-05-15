@@ -15,6 +15,9 @@ const ParamOperation = () => {
       case "*":
         result = +x * +y;
         break;
+      case "^":
+        result = Math.pow(+x, +y);
+        break;
       default:
         result = +x / +y;
         break;

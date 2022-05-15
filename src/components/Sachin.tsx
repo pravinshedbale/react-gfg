@@ -3,8 +3,8 @@ import Navigator from "./Navigator";
 const Sachin = () => {
   return (
     <>
-      <PlayerCard>Sachin</PlayerCard>
       <Navigator></Navigator>
+      <PlayerCard>Sachin</PlayerCard>
     </>
   );
 };
