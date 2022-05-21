@@ -6,6 +6,7 @@ import { useState } from "react";
 const CalculatorForm = () => {
   const [firstNum, setFirstNum] = useState<number>(0);
   const [secondNumber, setSecondNumber] = useState<number>(0);
+  const [result, setResult] = useState<number>(0);
   return (
     <>
       <Navigator></Navigator>
@@ -40,8 +41,29 @@ const CalculatorForm = () => {
           </div>
 
           <div className="controls">
-            <OperationButton className="addButton" opName="Add" />
-            <OperationButton className="subButton" opName="Subtract" />
+            <OperationButton
+              className="addButton"
+              opName="Add"
+              setRes={() => setResult(firstNum + secondNumber)}
+            />
+            <OperationButton
+              className="subButton"
+              opName="Subtract"
+              setRes={() => setResult(firstNum - secondNumber)}
+            />
+          </div>
+
+          <div className="outputBox">
+            <label htmlFor="num1" className="output-label">
+              Result :
+            </label>
+            <input
+              type="number"
+              name="result"
+              id="result"
+              value={result}
+              disabled
+            />
           </div>
         </div>
       </Card>
