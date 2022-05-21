@@ -14,6 +14,9 @@ const Navigator = () => {
           <button onClick={() => navigate("/virat")}>Virat</button>{" "}
         </li> */}
         <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
           <a href="/virat">Virat</a>
         </li>
         <li>
