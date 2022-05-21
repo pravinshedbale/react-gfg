@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import UserParams from "./components/UserParams";
 import ParamOperation from "./components/ParamOperation";
 import CalculatorForm from "./components/Forms/CalculatorForm";
+import NoteTaking from "./components/NoteTaking";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/:x///:y" element={<ParamOperation />}></Route>
         <Route path="*" element={<Navigate to="/" />}></Route>
         <Route path="/calculator" element={<CalculatorForm />}></Route>
+        <Route path="/notetaking" element={<NoteTaking />}></Route>
       </Routes>
     </BrowserRouter>
   );

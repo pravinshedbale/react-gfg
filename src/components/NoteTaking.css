@@ -1,0 +1,13 @@
+.add-note {
+  border-radius: 10px;
+  width: 50px;
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.note-text {
+  border-radius: 10px;
+  height: 50px;
+  width: 500px;
+}

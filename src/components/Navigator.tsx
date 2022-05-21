@@ -28,6 +28,9 @@ const Navigator = () => {
         <li>
           <a href="/calculator">Calculator</a>
         </li>
+        <li>
+          <a href="/notetaking">NoteTaking</a>
+        </li>
       </ul>
     </>
   );
