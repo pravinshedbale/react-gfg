@@ -12,4 +12,22 @@
   border-radius: 10px;
   width: 100px;
   height: 30px;
+  margin-right: 20px;
+}
+.divButton {
+  color: black;
+  background-color: rgb(123, 240, 223);
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+
+.multButton {
+  color: white;
+  background-color: rgb(160, 131, 197);
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
 }

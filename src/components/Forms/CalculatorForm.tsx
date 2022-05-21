@@ -51,6 +51,16 @@ const CalculatorForm = () => {
               opName="Subtract"
               setRes={() => setResult(firstNum - secondNumber)}
             />
+            <OperationButton
+              className="divButton"
+              opName="Division"
+              setRes={() => setResult(firstNum / secondNumber)}
+            />
+            <OperationButton
+              className="multButton"
+              opName="Multiplication"
+              setRes={() => setResult(firstNum * secondNumber)}
+            />
           </div>
 
           <div className="outputBox">
