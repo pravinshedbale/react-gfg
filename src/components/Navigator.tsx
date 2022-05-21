@@ -25,6 +25,9 @@ const Navigator = () => {
         <li>
           <a href="/sachin">Sachin</a>
         </li>
+        <li>
+          <a href="/calculator">Calculator</a>
+        </li>
       </ul>
     </>
   );

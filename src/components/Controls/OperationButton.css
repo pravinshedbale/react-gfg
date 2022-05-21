@@ -1,0 +1,15 @@
+.addButton {
+  color: white;
+  background-color: rgb(48, 48, 156);
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}
+.subButton {
+  color: white;
+  background-color: rgb(66, 66, 73);
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+}

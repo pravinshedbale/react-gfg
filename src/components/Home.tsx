@@ -1,4 +1,4 @@
-import PlayerCard from "./Container/PlayerCard";
+import PlayerCard from "./Container/Card";
 import Navigator from "./Navigator";
 const Home = () => {
   return (

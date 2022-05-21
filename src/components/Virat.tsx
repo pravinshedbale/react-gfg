@@ -1,10 +1,10 @@
-import PlayerCard from "./Container/PlayerCard";
+import Card from "./Container/Card";
 import Navigator from "./Navigator";
 const Virat = () => {
   return (
     <>
       <Navigator></Navigator>
-      <PlayerCard>Virat</PlayerCard>
+      <Card>Virat</Card>
     </>
   );
 };

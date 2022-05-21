@@ -1,0 +1,8 @@
+.inputBox {
+  margin: 10px;
+}
+
+input[type="number"] {
+  border-radius: 10px;
+  height: 20px;
+}
