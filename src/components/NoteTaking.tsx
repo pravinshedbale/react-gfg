@@ -6,10 +6,12 @@ import "./NoteTaking.css";
 const NoteTaking = () => {
   const [list, setList] = useState<string[]>([]);
   const [value, setValue] = useState<string>("");
+  const [searchKey, setSearchKey] = useState<string>("");
   return (
     <>
       <Navigator />
       <NoteHolder>
+        <input type="text" name="search" id="search-text" value={searchKey} onChange={(e) => setSearchKey(e.target.value)} />
         <input
           type="text"
           className="note-text"
@@ -27,18 +29,18 @@ const NoteTaking = () => {
         >
           Add
         </button>
-
+        {/* 
         {list.map((item, i) => {
-          return (
-            <NoteCard
-              key={i}
-              content={item}
-              setList={setList}
-              notesList={list}
-              index={i}
-            ></NoteCard>
-          );
-        })}
+          return <NoteCard key={i} content={item} setList={setList} notesList={list} index={i}></NoteCard>;
+        })} */}
+
+        {list
+          .filter((item) => {
+            return item.toLocaleLowerCase().includes(searchKey);
+          })
+          .map((item, i) => {
+            return <NoteCard key={i} content={item} setList={setList} notesList={list} index={i}></NoteCard>;
+          })}
       </NoteHolder>
     </>
   );

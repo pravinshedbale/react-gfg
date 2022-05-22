@@ -11,3 +11,11 @@
   height: 50px;
   width: 500px;
 }
+
+#search-text {
+  border-radius: 10px;
+  width: 50px;
+  margin: 10px;
+  height: 50px;
+  width: 200px;
+}

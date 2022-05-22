@@ -18,6 +18,7 @@ const NoteCard = (props: noteProps) => {
         hidden={isHidden}
         defaultValue={props.notesList[props.index]}
       />
+
       <div className="note-controls">
         <button
           onClick={() => {
@@ -39,13 +40,7 @@ const NoteCard = (props: noteProps) => {
         <button
           onClick={() => {
             setIsHidden(!isHidden);
-
-            props.notesList[props.index] = (
-              document.getElementById(
-                "edited-note-" + props.index
-              ) as HTMLInputElement
-            ).value;
-
+            props.notesList[props.index] = (document.getElementById("edited-note-" + props.index) as HTMLInputElement).value;
             props.setList([...props.notesList]);
           }}
           hidden={isHidden}
