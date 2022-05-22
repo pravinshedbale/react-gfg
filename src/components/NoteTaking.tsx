@@ -21,7 +21,7 @@ const NoteTaking = () => {
         <button
           className="add-note"
           onClick={() => {
-            value ? setList([...list, value]) : alert("Cant Add Empty Note");
+            value ? setList([...list, value]) : alert("Can't Add Empty Note");
             setValue("");
           }}
         >
