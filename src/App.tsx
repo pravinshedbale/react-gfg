@@ -7,6 +7,7 @@ import UserParams from "./components/UserParams";
 import ParamOperation from "./components/ParamOperation";
 import CalculatorForm from "./components/Forms/CalculatorForm";
 import NoteTaking from "./components/NoteTaking";
+import Carousel from "./components/Carousel";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" />}></Route>
         <Route path="/calculator" element={<CalculatorForm />}></Route>
         <Route path="/notetaking" element={<NoteTaking />}></Route>
+        <Route path="/carousel" element={<Carousel />}></Route>
       </Routes>
     </BrowserRouter>
   );

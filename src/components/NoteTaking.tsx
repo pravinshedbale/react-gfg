@@ -7,6 +7,13 @@ const NoteTaking = () => {
   const [list, setList] = useState<string[]>([]);
   const [value, setValue] = useState<string>("");
   const [searchKey, setSearchKey] = useState<string>("");
+
+  const renderFilteredItem = (listItem: string, index: number) => {
+    if (listItem.toLowerCase().includes(searchKey.toLowerCase())) {
+      return <NoteCard key={index} content={listItem} setList={setList} notesList={list} index={index}></NoteCard>;
+    }
+    return;
+  };
   return (
     <>
       <Navigator />
@@ -33,14 +40,7 @@ const NoteTaking = () => {
         {list.map((item, i) => {
           return <NoteCard key={i} content={item} setList={setList} notesList={list} index={i}></NoteCard>;
         })} */}
-
-        {list
-          .filter((item) => {
-            return item.toLocaleLowerCase().includes(searchKey);
-          })
-          .map((item, i) => {
-            return <NoteCard key={i} content={item} setList={setList} notesList={list} index={i}></NoteCard>;
-          })}
+        {list.map(renderFilteredItem)}
       </NoteHolder>
     </>
   );

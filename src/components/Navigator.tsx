@@ -31,6 +31,9 @@ const Navigator = () => {
         <li>
           <a href="/notetaking">NoteTaking</a>
         </li>
+        <li>
+          <a href="/carousel">Carousel</a>
+        </li>
       </ul>
     </>
   );
