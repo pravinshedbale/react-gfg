@@ -14,7 +14,8 @@ const Carousel = () => {
       <Navigator></Navigator>
       <Card>
         <div className="carousel">
-          <img src={carouselImages[carouselIndex]} alt="" height="300" width="400" />
+          <img src={carouselImages[carouselIndex]} alt="" height="300" width="500" />
+          <p>{carouselIndex + 1}</p>
         </div>
         <div className="carousel-controls">
           <button disabled={carouselIndex === 0 ? true : false} onClick={() => setCaraouselIndex(carouselIndex - 1)}>
