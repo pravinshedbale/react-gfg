@@ -21,10 +21,14 @@ const Carousel = () => {
           <p>{carouselIndex + 1}</p>
         </div>
         <div className='carousel-controls'>
-          <button disabled={carouselIndex === 0 ? true : false} onClick={() => setCaraouselIndex(carouselIndex - 1)}>
+          <button disabled={carouselIndex === 0 ? true : false} onClick={() => setCaraouselIndex(carouselIndex - 1)} className='carousel-buttons'>
             Previous
           </button>
-          <button disabled={carouselIndex === carouselImages.length - 1 ? true : false} onClick={() => setCaraouselIndex(carouselIndex + 1)}>
+          <button
+            disabled={carouselIndex === carouselImages.length - 1 ? true : false}
+            onClick={() => setCaraouselIndex(carouselIndex + 1)}
+            className='carousel-buttons'
+          >
             Next
           </button>
         </div>

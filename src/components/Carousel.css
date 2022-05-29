@@ -4,7 +4,7 @@
   height: 300px;
 }
 
-button {
+.carousel-buttons {
   border-radius: 10px;
   height: 50px;
   width: 100px;

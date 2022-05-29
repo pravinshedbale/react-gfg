@@ -1,4 +1,4 @@
-import "./Navigator.css";
+import './Navigator.css';
 const Navigator = () => {
   // const navigate = useNavigate();
   return (
@@ -14,25 +14,34 @@ const Navigator = () => {
           <button onClick={() => navigate("/virat")}>Virat</button>{" "}
         </li> */}
         <li>
-          <a href="/">Home</a>
+          <a href='/'>Home</a>
         </li>
         <li>
-          <a href="/virat">Virat</a>
+          <a href='/virat'>Virat</a>
         </li>
         <li>
-          <a href="/rahul">Rahul</a>
+          <a href='/rahul'>Rahul</a>
         </li>
         <li>
-          <a href="/sachin">Sachin</a>
+          <a href='/sachin'>Sachin</a>
         </li>
         <li>
-          <a href="/calculator">Calculator</a>
+          <a href='/calculator'>Calculator</a>
         </li>
         <li>
-          <a href="/notetaking">NoteTaking</a>
+          <a href='/notetaking'>NoteTaking</a>
         </li>
         <li>
-          <a href="/carousel">Carousel</a>
+          <a href='/carousel'>Carousel</a>
+        </li>
+        <li>
+          <a href='/useeffect'>Use Effect Demo</a>
+        </li>
+        <li>
+          <a href='/asynccarousel'>Async Carousel</a>
+        </li>
+        <li>
+          <a href='/userlist'>User List</a>
         </li>
       </ul>
     </>
