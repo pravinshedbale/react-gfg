@@ -43,6 +43,9 @@ const Navigator = () => {
         <li>
           <a href='/userlist'>User List</a>
         </li>
+        <li>
+          <a href='/reduxExample'>Redux Example</a>
+        </li>
       </ul>
     </>
   );

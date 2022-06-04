@@ -1,12 +1,12 @@
-import { useState } from "react";
-import NoteCard from "./Container/NoteCard";
-import NoteHolder from "./Container/NoteHolder";
-import Navigator from "./Navigator";
-import "./NoteTaking.css";
-const NoteTaking = () => {
+import { useState } from 'react';
+import NoteCard from './Container/NoteCard';
+import NoteHolder from './Container/NoteHolder';
+import Navigator from './Navigator';
+import './NoteTaking.css';
+const NoteTaking: React.FC = () => {
   const [list, setList] = useState<string[]>([]);
-  const [value, setValue] = useState<string>("");
-  const [searchKey, setSearchKey] = useState<string>("");
+  const [value, setValue] = useState<string>('');
+  const [searchKey, setSearchKey] = useState<string>('');
 
   const renderFilteredItem = (listItem: string, index: number) => {
     if (listItem.toLowerCase().includes(searchKey.toLowerCase())) {
@@ -18,20 +18,20 @@ const NoteTaking = () => {
     <>
       <Navigator />
       <NoteHolder>
-        <input type="text" name="search" id="search-text" value={searchKey} onChange={(e) => setSearchKey(e.target.value)} />
+        <input type='text' name='search' id='search-text' value={searchKey} onChange={(e) => setSearchKey(e.target.value)} />
         <input
-          type="text"
-          className="note-text"
+          type='text'
+          className='note-text'
           value={value}
           onChange={(e) => {
             setValue(e.target.value);
           }}
         />
         <button
-          className="add-note"
+          className='add-note'
           onClick={() => {
             value ? setList([...list, value]) : alert("Can't Add Empty Note");
-            setValue("");
+            setValue('');
           }}
         >
           Add
@@ -45,5 +45,4 @@ const NoteTaking = () => {
     </>
   );
 };
-
 export default NoteTaking;
